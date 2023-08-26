@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const reviewSchema = new Schema({
   user: { type: Schema.Types.ObjectId, ref: 'User' },
-  pokemon: {type: Schema.Types.ObjectId, ref: 'Pokemon'},
+  item: {type: Schema.Types.ObjectId, ref: 'Item'},
   rating: {type: Number, required: true},
   body: {type: String, required: true}
 }, {

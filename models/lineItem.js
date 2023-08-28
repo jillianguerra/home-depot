@@ -1,11 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const itemSchema = require('./item');
+const itemSchema = require('./itemSchema');
+const subitemSchema = require('./subItemSchema');
 
 const lineItemSchema = new Schema(
 	{
 		qty: { type: Number, default: 1 },
-		item: itemSchema
+		item: itemSchema,
+		subItem: subitemSchema
 	},
 	{
 		timeStamps: true,

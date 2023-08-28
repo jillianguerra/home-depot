@@ -1,6 +1,5 @@
 const item = require('./item')
-const subItemSchema = require('./subItem')
-
+const subItem = require('./subItem')
 const Schema = require('mongoose').Schema;
 
 const subItemSchema = new Schema({
@@ -14,4 +13,4 @@ const subItemSchema = new Schema({
     timestamps: true
    })
 
-module.exports = itemSchema
+module.exports = subItemSchema

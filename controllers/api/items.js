@@ -1,4 +1,5 @@
 const Item = require('../../models/item')
+const SubItem = require('../../models/subItem')
 
 module.exports = {
   index,

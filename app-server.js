@@ -10,7 +10,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use(logger('dev'))
-app.use(favicon(path.join(__dirname, 'public', 'img','pokeball-favicon.png')))
+app.use(favicon(path.join(__dirname, 'public', 'img','home-depot-favicon.png')))
 app.use(express.static(path.join(__dirname, 'public')))
 // Check if token and create req.user
 app.use(require('./config/checkToken'));
@@ -19,7 +19,7 @@ app.use(require('./config/checkToken'));
 app.use('/api/users', require('./routes/api/users'));
 // Protect the API routes below from anonymous users
 const ensureLoggedIn = require('./config/ensureLoggedIn');
-app.use('/api/pokemon', ensureLoggedIn, require('./routes/api/pokemon'));
+app.use('/api/items', ensureLoggedIn, require('./routes/api/items'));
 app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders'));
 
 app.get('*', (req, res) => {

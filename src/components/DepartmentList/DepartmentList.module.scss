@@ -1,17 +1,17 @@
 .DepartmentList {
-    margin-top: 30px;
+    margin-top: 60vmin;
     display: flex;
-    padding: 3vmin;
-    justify-content: space-around;
-    height: 94%;
-    color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--black)k;
     font-size: 3vmin;
     font-family: "Gill Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .DepartmentList div img {
+    .DepartmentList div img {
     height: 10vw;
     width: 12vw;
   }
@@ -21,18 +21,47 @@
   }
   
   .DepartmentList div {
-    padding: 2vw 3vw;
-    background-color: #d2d0b1;
-    border: 0.1vmin solid black;
-    justify-content: space-between;
-    background-color: var(--tan-2);
-}
+    padding: 2vw 4vw;
+    margin: 1vw;
+    background-color: var(--beige-1);
+    border: 0.3vmin solid var(--beige-2);
+  } 
 
-.DepartmentList span:hover:not(.active) {
-    cursor: pointer;
-    transform: scale(0.9);
-}
+// .DepartmentList {
+//     margin-top: 30px;
+//     display: flex;
+//     padding: 3vmin;
+//     justify-content: space-around;
+//     height: 94%;
+//     color: black;
+//     font-size: 3vmin;
+//     font-family: "Gill Sans", sans-serif;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//   }
+  
+//   .DepartmentList div img {
+//     height: 10vw;
+//     width: 12vw;
+//   }
+  
+//   .DepartmentList div:active {
+//     transform: scale(0.85);
+//   }
+  
+//   .DepartmentList div {
+//     padding: 2vw 3vw;
+//     background-color: #d2d0b1;
+//     border: 0.1vmin solid black;
+//     justify-content: space-between;
+//     background-color: var(--tan-2);
+// }
 
-.DepartmentList span:active {
-    transform: scale(0.7);
-}
+// .DepartmentList span:hover:not(.active) {
+//     cursor: pointer;
+//     transform: scale(0.9);
+// }
+
+// .DepartmentList span:active {
+//     transform: scale(0.7);
+// }

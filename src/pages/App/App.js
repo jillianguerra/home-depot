@@ -35,6 +35,22 @@ export default function App() {
   useEffect(function () {
     try {
       console.log('hello?')
+      async function confirmUser(user) {
+        console.log('hi')
+        if (!user) {
+          console.log('yo')
+          const guestInfo = {
+            firstName: 'Guest',
+            email: Date.now(),
+            password: Date.now(),
+            guest: true,
+          }
+          const guest = await signUp(guestInfo)
+          setUser(guest)
+          console.log(guest)
+        }
+      }
+      confirmUser(user)
       async function getDeps() {
         const deps = await catDepAPI.getDepartments()
         setDepartments(deps)
@@ -49,17 +65,7 @@ export default function App() {
         const data = await wishAPI.showWishlist(user._id)
         setWishlist(data)
       }
-      async function confirmUser(user) {
-        console.log('hi')
-        if (!user) {
-          const guest = await signUp()
-          setUser(guest)
-          console.log(guest)
-        }
-        getWishlist()
-        getCart()
-      }
-      confirmUser(user)
+      getWishlist()
     } catch (error) {
       console.log(error)
     }

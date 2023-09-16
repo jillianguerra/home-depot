@@ -17,6 +17,9 @@
   ## Github Project Board
   https://github.com/users/jillianguerra/projects/2/views/2
 
+  ## Diployed Version
+  https://buckets-and-beyond.tech/
+
 </div>
 </br>
 

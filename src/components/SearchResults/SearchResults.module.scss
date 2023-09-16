@@ -1,0 +1,20 @@
+.searchResults {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4vmin;
+}
+
+.item {
+    border: 0.5vmin solid var(--khaki);
+    margin: 2vmin;
+    width: 30vmax;
+}
+
+@media only screen and (max-width: 480px) {
+    .item {
+        width: 90vmin;
+    }
+}

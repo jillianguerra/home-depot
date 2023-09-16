@@ -1,0 +1,26 @@
+.hamburger {
+  position: absolute;
+  right: 2px;
+}
+
+.hamburger div {
+  width: 5vmin;
+  height: 0.5vmin;
+  background-color: var(--olive-green);
+  margin: 1vmin;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .hamburger {
+    top: 5px;
+  }
+  
+  .hamburger div {
+    width: 8vmin;
+    height: 1.2vmin;
+    margin: 1vmin;
+    margin-bottom: 1.5vmin;
+  }
+}

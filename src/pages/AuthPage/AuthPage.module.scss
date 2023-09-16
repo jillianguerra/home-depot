@@ -1,0 +1,29 @@
+.AuthPage {
+  /* background-color: #6c7343; */
+  color: #381806;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    /* background-color: #e7dcc9; */
+    border: .1vmin solid var(--olive-green);
+    padding: 20px;
+    margin-bottom: 5vmin;
+    text-align: center;
+
+    .signUpText,
+    .logInText {
+      color: #381806;
+      cursor: pointer;
+    }
+  }
+
+  .back {
+    background-color: var(--olive-green);
+    color: var(--white);
+    padding: 1vmin;
+  }
+}

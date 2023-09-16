@@ -1,0 +1,11 @@
+.OrderListItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vmin;
+    padding: 2vmin;
+    color: var(--mocha);
+    border: .1vmin solid var(--mocha);
+    font-size: 2vmin;
+    }

@@ -1,0 +1,31 @@
+.ModalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--beige-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .ModalContent {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    width: 60%;
+    position: relative;
+  }
+  
+  .CloseBtn {
+    width: 2vmin;
+    height: 2vmin;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--olive-green);
+  }

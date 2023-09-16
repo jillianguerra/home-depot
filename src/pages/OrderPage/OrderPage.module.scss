@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-height: calc(100vh - 18vmin);
+  min-height: calc(100vh - 70vmin)
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.total,
+.checkoutBtn {
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 1.5vmin;
+  justify-self: end;
+}
+
+.total {
+  margin-top: 2vmin;
+  font-size: 4vmin;
+}

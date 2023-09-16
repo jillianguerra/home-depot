@@ -1,0 +1,35 @@
+.container {
+  color: var(--black);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 5vmin;
+  color: #381806;
+  text-transform: uppercase;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #777e49;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.checkoutBtn {
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #6c7343;
+}

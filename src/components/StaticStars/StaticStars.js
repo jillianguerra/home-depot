@@ -1,4 +1,4 @@
-import styles from './StarsStatic.module.scss'
+import styles from './StaticStars.module.scss'
 
 export default function Star({ rating }) {
     return (
@@ -8,7 +8,7 @@ export default function Star({ rating }) {
           return (
             <span
               key={`star-static-idx-${idx}`}
-              name="rating"
+              name="static-rating"
               className={idx <= (rating) ? `${styles.on}` : `${styles.off}`}
             >
               &#9733;

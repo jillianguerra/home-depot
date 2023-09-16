@@ -1,0 +1,43 @@
+.WishListItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vmin;
+    padding: 2vmin;
+    color: var(--mocha);
+    font-size: 4vmin;
+  }
+  
+  .WishListItem .img {
+    height: 10vw;
+  }
+  .WishListItem .img:hover {
+    cursor: pointer;
+  }
+  
+  .WishListItem .buy {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .WishListItem .buy span {
+    font-size: 1.7vw;
+    text-align: center;
+    color: var(--mocha);
+  }
+  .WishListItem button:hover {
+    background-color: var(--olive);
+    size: 3vw;
+  }
+  
+  .WishListItem .name {
+    font-size: 2vw;
+    text-align: center;
+    color: var(--mocha);
+  }
+  .WishListItem .name:hover {
+    cursor: pointer;
+    font-size: 2.4vw;
+    color: var(--black);
+  }

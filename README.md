@@ -1,68 +1,139 @@
-# Big Poppa Code React Starter Kit
-This Starter Kit is being created for New Web Developers that want to get started with react
+<div style="text-align: center;">
+  # Buckets and Beyond
 
-Most people use a CLI Tool like Vue-Cli or Create React App and no idea what these things are doing
+  Buckets and Beyond is a full-stack web application inspired by the Home Depot website. It offers a wide range of products, categories, and features to enhance your shopping experience.
+ 
+ 
+  ## WireFrame
+  ![Wireframe](https://github.com/JoeyZ56/home-depot/assets/127636815/0e979c22-aa03-4273-9dd3-8ec47330581f)
 
-The goal of this is for it to be a tool that let's you learn JS at a new level because you have access to
-everything under the hood and no opinionated set up
+  ## ERD
+  ![Alt text](image.png)
+	
 
-I will base all my tutorials on this Starter Kit.
+  ## Pitch Deck
+  https://docs.google.com/presentation/d/e/2PACX-1vRu4nY2Ng_lB_z3Y6ontEqRsfiF_0jy6UNmcAeVn2FlV37yhGRorUDseTdSj81RVPUOuP5JuaS2zvtz/pub?start=false&loop=false&delayms=3000
 
-# Who Am I?
+  ## Github Project Board
+  https://github.com/users/jillianguerra/projects/2/views/2
 
-![arthurbernierjr.com](http://progressandfortune.com/smac_images/profile.jpg)
+</div>
+</br>
 
-I am Arthur Bernier Jr. I work as freelance fullstack web developer and attraction marketing consultant specializing in supporting e-commerce brands,
-subscription box sites, social activists, religious/non-profit leaders and creative entrepreneurs(i.e. barbers, artists, musicians, stylists, models and photographers).
-I have a passion for helping entrepreneurs reach their perfect audience and helping you communicate to that audience in a way that makes them know, like and trust you. I also am a Full-Time Instructor at General Assembly as well as a Software Engineer at Blavity Inc.
+<div style="text-align: center;">
 
 
-# My Favorite Online Instructors
 
-[__Colt Steele__](https://www.youtube.com/channel/UCrqAGUPPMOdo0jfQ6grikZw)
+# Pages and Components
 
-[__Brad Traversy__](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+### Home Page
+The home page features category content blocks, a featured items carousel, and links to important pages including About Us, FAQ, and My Account.
 
-[__Jose Santos Garcia__](https://www.youtube.com/channel/UC46wWUso9H5KPQcoL9iE3Ug)
+### Category List Page
 
-[__Stephen Grider__](https://www.youtube.com/channel/UCQCaS3atWyNHEy5PkDXdpNg/)
+This page displays categories within a department, aiding users in finding their desired products.
 
-## Steps
+### Item Listing Page
 
-**Install Gulp Globally**
-```bash
-npm i -g gulp-cli
-```
+Displays an array of items from the selected category.
 
-**Start the dev server**
-```bash
-npm run dev
-```
-### or
-```bash
-yarn dev
-```
+### Item Detail Page
 
-**Start the dev server with proxy**
-```bash
-npm run proxy
-```
+Provides detailed information about an item, including variations/types, reviews, photos, and links to suggested items.
 
-**Build files for production**
-```bash
-yarn build
-```
-### or
+### Order Page
 
-```bash
-npm run build
-```
+Shows items added to the user's cart, with the ability to edit quantities, delete items, or save items for later.
 
-**Deploy for production script**
-```bash
-npm start
-```
-### or
-```bash
-yarn start
-```
+### Checkout Page
+
+Displays a summary of items for purchase, allowing users to proceed to payment. Also provides sign-in/sign-up options for guests.
+
+### User Profile Page
+
+Displays user account information, settings, order history, reviews, and saved items.
+
+### Authentication Page
+
+Provides options for users to log in or create an account.
+
+### Search Results Page
+
+Similar to the Item Listing Page, this page shows filtered views of search results.
+
+### CRUD Operations
+
+Create: Users and reviews.
+
+Read: Displaying items, cart items, orders, reviews.
+
+Update: Modifying cart contents, updating user profile, editing reviews.
+
+Delete: Removing items from the cart, canceling orders, deleting reviews, deleting account.
+
+## Features
+
+#### As a guest
+
+Search for Items: Users can search for specific items using keywords.
+
+Add to Cart: Users can add items to their cart.
+
+Checkout: Users can review and proceed to payment for items in their cart.
+
+
+#### As a Member
+
+Add to Wishlist: Users can add items to their wishlist for future purchase.
+
+Review and Rate: Users can leave reviews and ratings on items.
+
+View order history
+
+### Technologies Used
+
+Client side was created using React
+
+Server side was created using Express & Node.js
+
+Database is linked to Mongo Atlis 
+
+Application is hosted on Digital Ocean
+
+Moduel bundler used Webpack
+
+Transpiler used Babel
+
+Build system used Gulp
+
+
+
+
+### Future Enhancements
+
+Add a 3rd party API
+
+Add subitem categories
+
+Add a chatbot feature
+
+Adding a buy again feature
+
+# Contributors
+
+Elysea Crawford</br> 
+Mel Blanco</br> 
+Mimi Zhou</br> 
+San Lae Lae Cho</br> 
+Jillian Guerra</br> 
+Joey Zazzi</br> 
+Laura Cohen</br> 
+Peter Jacobs</br> 
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+.DepartmentList {
+  display: flex;
+  justify-content: space-between;
+  width: 90vmin;
+  text-transform: uppercase;
+  font-size: 3vmin;
+
+  }
+  
+  .DepartmentList span:hover:not(.active) {
+    cursor: pointer;
+    //text-decoration: underline;
+    transform: scale(1.2);
+  }
+  
+  .DepartmentList span:active {
+    //text-decoration: underline;
+    transform: scale(0.7);
+   }
+
+/* @media only screen and (max-width: 480px) {
+  .DepartmentList {
+    font-size: 5vmin;
+  }
+} */

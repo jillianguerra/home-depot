@@ -1,0 +1,96 @@
+.ItemDetail {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-template-rows: 0.2fr 3fr 0.1fr;
+  grid-template-areas: 
+  "header header header header"
+  "aside . . buy"
+  "aside main main main";
+  padding: 2vmin;
+  color: var(--mocha);
+  background-color: var(--beige2);
+  font-size: 2vmin;
+}
+.ItemDetail header {
+  grid-area: header;
+  text-transform: uppercase;
+}
+.ItemDetail aside {
+  grid-area: aside;
+  width: 90vmin;
+}
+
+.ItemDetail footer {
+  grid-area: buy;
+  display: flex;
+  flex-direction: column;
+}
+
+.ItemDetail main {
+  text-align: right;
+}
+
+.price {
+  font-size: 2vw;
+  color: var(--black);
+  margin-left: 30vw;
+}
+
+.buy {
+  margin-right: -1vmin;
+}
+
+.ItemDetail .name {
+  font-size: 3vw;
+  text-align: center;
+  color: var(--black);
+  text-align: left;
+}
+
+.heart{
+  grid-column-start: 4;
+  color: var(--mocha);
+  cursor: pointer;
+  margin-left: 3vmin;
+}
+
+.ItemDetail .category {
+  margin-top: 1vmin;
+  font-size: 2vw;
+  color: var(--black);
+  margin-left: 30vw;
+  text-transform: uppercase;
+  width: 50vmin;
+}
+.ItemDetail .details {
+  margin-left: 30vw;
+}
+
+.ItemDetail .img {
+  margin-top: 1vmin;
+  border: none;
+  height: 50vmin;
+  width: 50vmin;
+}
+
+.btnDisabled {
+  background-color: var(--khaki);
+  cursor: not-allowed;
+}
+
+@media only screen and (max-width: 480px) {
+.ItemDetail .price, .ItemDetail .category, .ItemDetail .details, .ItemDetail .buy {
+  margin-left: -40vw;
+  width: 40vmin;
+  text-align: right;
+}
+
+.ItemDetail .category {
+  width: 10vmin;
+}
+
+.btnBuy {
+  font-size: 2vmin;
+}
+}

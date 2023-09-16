@@ -1,0 +1,81 @@
+.lineItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid var(--khaki);
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  max-width: 100px;
+  max-height: 100px;
+  width: 45vmin;
+  height: 36vmin;
+  border: none;
+}
+
+.name {
+  text-align: left;
+  margin-left: 5vmin;
+  text-transform: uppercase;
+}
+
+.rightSide {
+  flex-direction: column;
+  text-align: right;
+  /* margin-left: -10vmin; */
+}
+
+.quantity {
+  /* margin-right: 5vmin; */
+  display: flex;
+  flex-direction: column;
+}
+
+.changeQty {
+  display: flex;
+}
+
+.quantityWindow {
+  border: .1vmin solid var(--khaki);
+  width: 4vmin;
+}
+
+.quantityBtn {
+  height: 4vmin;
+  font-size: 2vmin;
+  padding: 1vmin 2vmin 4vmin;
+  width: 25vmin;
+}
+
+.quantity button {
+  margin-right: -100vmin;
+}
+
+.quantitySpan {
+  padding: 1vmin 2vmin;
+}
+
+.quantityBtn:hover {
+  cursor: pointer;
+  background-color: var(--khaki);
+}
+
+.price {
+  font-size: 4vmin;
+}
+
+.wishlist {
+  color: var(--olive-green);
+  cursor: pointer;
+}
+
+.wishlist:hover {
+  text-decoration: underline;
+}

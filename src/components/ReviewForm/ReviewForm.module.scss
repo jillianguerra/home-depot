@@ -1,0 +1,36 @@
+.ReviewForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas: 
+    "label label rating"
+    "input input input"
+    ". submit .";
+}
+.ReviewForm .label {
+    grid-area: label;
+    text-align: center;
+    font-size: 3vmin;
+    color: var(--mocha);
+}
+.ReviewForm .rating {
+    grid-area: rating;
+    place-self: center;
+}
+.ReviewForm .input {
+    grid-area: input;
+}
+.ReviewForm .submit {
+    grid-area: submit;
+    background-color: var(--khaki);
+    color: var(--mocha);
+    margin-left: 10vmax;
+    margin-right: 10vmax;
+    margin-top: 2vmin;
+}
+.ReviewForm .submit:hover {
+    cursor: pointer;
+}
+.completed {
+    color: gray,
+}

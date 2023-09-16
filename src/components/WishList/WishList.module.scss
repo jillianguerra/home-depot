@@ -1,0 +1,13 @@
+.MenuList {
+    background-color: var(--beige1);
+    border: .5vmin solid var(--mocha);
+    border-radius: 2vmin;
+    padding: 3vmin;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-height: calc(100vh - 18vmin);
+    }
+    .MenuList::-webkit-scrollbar {
+        display: none;
+    }

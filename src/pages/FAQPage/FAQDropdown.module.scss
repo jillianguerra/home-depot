@@ -1,0 +1,38 @@
+.dropdown {
+  margin-bottom: 20px;
+  margin-left: 20vmax;
+  margin-right: 20vmax;
+}
+
+.dropdownBtn {
+  background-color: #777e49;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: block;
+  background-color: white;
+  color: #777e49;
+  padding: 10px;
+  border: 1px solid #777e49;
+  margin-top: 20px;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.question h3 {
+  margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .dropdown {
+    margin-left: 3vmin;
+    margin-right: 3vmin;
+  }
+}

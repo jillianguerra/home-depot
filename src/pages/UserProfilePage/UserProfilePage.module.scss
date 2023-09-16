@@ -1,0 +1,67 @@
+.container {
+  color: #381806;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #381806;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+.input {
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #777e49;
+    background-color: transparent;
+    color: #381806;
+    &::placeholder {
+      color: #381806;
+    }
+  }
+}
+
+.editBtn {
+  background-color: #777e49;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.wishlistBtn,
+.orderHistoryBtn,
+.deleteBtn {
+  background-color: #777e49;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px; 
+}
+
+.wishlistBtn:hover,
+.orderHistoryBtn:hover,
+.deleteBtn:hover {
+  background-color: #6c7343;
+}

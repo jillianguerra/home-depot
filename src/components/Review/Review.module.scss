@@ -1,0 +1,17 @@
+.Review {
+  display: flex;
+  flex-direction: column;
+  border: .2vmin solid var(--mocha);
+  padding: 1vh;
+  margin: 1vh;
+  color: var(--mocha);
+  align-items: flex-start;
+}
+.Review .name {
+  font-size: 3vh;
+  color: var(--black);
+}
+.Review button {
+align-self: center;
+}
+  

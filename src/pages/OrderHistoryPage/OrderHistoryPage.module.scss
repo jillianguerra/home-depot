@@ -1,0 +1,30 @@
+.container {
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #381806;
+  }
+  
+  .order {
+    border: 1px solid #777e49;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .order p {
+    margin: 5px 0;
+  }
+  
+  .order p:first-child {
+    font-weight: bold;
+  }
+  
+  .order p:last-child {
+    font-size: 18px;
+  }
+  

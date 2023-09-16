@@ -1,0 +1,11 @@
+.WishListPage {
+    margin: 2vmin;
+}
+.WishListPage .message {
+    text-align: center;
+    color: var(--mocha);
+}
+.WishListPage .message:hover {
+    color: var(--black);
+    cursor: pointer;
+}

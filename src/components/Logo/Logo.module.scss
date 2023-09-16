@@ -1,0 +1,16 @@
+.Logo {
+    height: 12vmin;
+    width: 12vmin;
+    display: flex;
+    font-family: 'Vast Shadow', cursive;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--olive-green);
+    font-size: 2.5vmin;
+    border: .6vmin solid var(--mocha);
+    }
+    .Logo img {
+        height: 12vmin;
+    }

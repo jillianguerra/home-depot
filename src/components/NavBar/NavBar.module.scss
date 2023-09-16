@@ -1,0 +1,56 @@
+.navBarTop,
+.navBarBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBarTop {
+  margin-right: 10vmin;
+}
+
+.navBarTop {
+  margin-right: 10vmin;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img{
+  border: 0;
+  height: 2.5vmax;
+}
+
+.cart:hover {
+  cursor: pointer;
+}
+
+.navBarBottom {
+  /* border-top: 0.2vmin solid black;
+  border-bottom: 0.2vmin solid black; */
+  margin-top: 2vmin;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  padding-left: 1vmin;
+  padding-right: 1vmin;
+  background-color: var(--olive-green);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.hamContainer {
+  position: absolute;
+  right: 2vmin;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 480px) {
+  .navBarTop {
+    margin-right: 15vmin;
+  }
+  
+  .navBarBottom {
+    font-size: 3.5vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+  }
+}

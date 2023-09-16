@@ -1,0 +1,51 @@
+.menuContainer,
+.userOptions,
+.info {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menuContainer {
+  /* margin-left: 20vmin;
+  margin-right: 25vmin; */
+  margin-top: 7.25vmin;
+  padding: 5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 94%; */
+  height: 89vmin;
+  background-color: var(--olive-green);
+  color: var(--white);
+  font-size: 5vmin;
+}
+
+.auth {
+  margin-top: 0;
+  color: var(--white);
+}
+
+.userOptions,
+.info {
+  line-height: 1.4;
+}
+
+.faq {
+  color: var(--white);
+}
+
+.auth:hover,
+.userOptions li:hover,
+.info li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--white);
+}
+
+a {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--white);
+}

@@ -1,0 +1,36 @@
+.SearchBar {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--khaki);
+  border-radius: 1vmin;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"] {
+  border: none;
+  flex: 1;
+  padding-right: 1vmin;
+  padding-left: 1vmin;
+  outline: none;
+  text-transform: uppercase;
+  width: 50vmin;
+}
+
+/*
+  .SearchButton {
+    background-color: var(--white);
+    border: none;
+    color: grey;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  */
+
+@media only screen and (max-width: 480px) {
+  input[type="text"] {
+    font-size: 6vmin;
+    width: 40vmin;
+  }
+}

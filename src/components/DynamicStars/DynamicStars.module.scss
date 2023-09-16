@@ -3,11 +3,11 @@
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 4vh;
+    font-size: 3vh;
   }
   .Star .on {
-    color: var(--yellow);
+    color: var(--mocha);
   }
   .Star .off {
-    color: var(--gray);
+    color: var(--khaki);
   }

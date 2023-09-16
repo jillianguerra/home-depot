@@ -1,0 +1,12 @@
+.ReviewList {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-height: calc(100vh - 18vmin);
+    font-size: 3vmin;
+}
+.ReviewList::-webkit-scrollbar {
+    display: none;
+}

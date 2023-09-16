@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import styles from './DynamicStar.module.scss'
+import styles from './DynamicStars.module.scss'
 
 export default function DynamicStar({ formData, handleChange }) {
-    // const [rating, setRating] = useState(0);
-    const [hover, setHover] = useState(0);
+    // const [rating, setRating] = useState(0)
+    const [hover, setHover] = useState(0)
     return (
       <div className={styles.Star}>
         {[...Array(5)].map((star, idx) => {
-          idx += 1;
+          idx += 1
           return (
             <span
               key={`star-idx-${idx}`}
@@ -19,8 +19,8 @@ export default function DynamicStar({ formData, handleChange }) {
             >
               &#9733;
             </span>
-          );
+          )
         })}
       </div>
-    );
-  };
+    )
+  }

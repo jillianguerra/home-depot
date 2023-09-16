@@ -10,12 +10,13 @@ export default function HamMenu({ user, setUser }) {
     usersServiceApi.logOut();
     navigate('/home');
     window.location.reload();
+    window.localStorage.removeItem('token');
   }
 
   return (
     <ul className={styles.menuContainer}>
       <li>
-        {user.isGuest === false ? (
+        {user && user.isGuest === false ? (
         /* {user ? ( */
           <ul className={styles.userOptions}>
             <li>

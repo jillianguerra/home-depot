@@ -19,7 +19,8 @@ const dataController = {
 			isGuest: true
 		  };
 	  
-		  const user = await User.create(guestInfo);
+		  const user = new User(guestInfo);
+		  await user.save()
 	  
 		  // Generate JWT token for the guest
 		  const token = createJWT(user);
@@ -34,13 +35,11 @@ const dataController = {
 		}
 	  },
 
-	async signUp(req, res, next) {
+	  async signUp(req, res, next) {
 		try {
 			req.body.isGuest = false
-			const user = await User.findById(req.user._id)
-			const updates = Object.keys(req.body)
-            updates.forEach(update => user[update] = req.body[update])
-            await user.save()
+			req.body.password = await bcrypt.hash(req.body.password, 6);
+			const user = await User.findByIdAndUpdate(req.user._id, req.body, { new: true })
 			const token = createJWT(user);
 			res.locals.data.user = user;
 			res.locals.data.token = token;
@@ -50,6 +49,27 @@ const dataController = {
 			res.status(400).json({ message: e.message });
 		}
 	},
+
+	async signUp2(req, res, next) {
+			try {
+				req.body.isGuest = false
+				const user = new User(req.body)
+				await user.save()
+				console.log(user)
+				// token will be a string
+				const token = createJWT(user);
+				// send back the token as a string
+				// which we need to account for
+				// in the client
+	
+				res.locals.data.user = user;
+				res.locals.data.token = token;
+				next();
+			} catch (e) {
+				console.log('you got a database problem');
+				res.status(400).json({ message: e.message });
+			}
+		},
 	async login(req, res, next) {
 		try {
 			const user = await User.findOne({ email: req.body.email });

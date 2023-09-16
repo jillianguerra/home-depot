@@ -10,6 +10,10 @@ export function signUp(userData) {
   return sendRequest(`${BASE_URL}/`, 'PUT', userData)
 }
 
+export function signUp2(userData) {
+  return sendRequest(`${BASE_URL}/`, 'POST', userData)
+}
+
 export function login(credentials) {
   return sendRequest(`${BASE_URL}/login`, 'POST', credentials)
 }

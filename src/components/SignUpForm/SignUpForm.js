@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { signUp } from '../../utilities/users-service';
+import { signUp, signUp2 } from '../../utilities/users-service';
 import styles from './SignUpForm.module.scss';
 
 export default class SignUpForm extends Component {
@@ -24,8 +24,13 @@ export default class SignUpForm extends Component {
       const formData = { ...this.state };
       delete formData.confirm;
       delete formData.error;
-
-      const user = await signUp(formData);
+      let user 
+      if (localStorage.getItem('token')) {
+        user = await signUp(formData) 
+      } else {
+        user = await signUp2(formData)
+      }
+      
       this.props.setUser(user);
     } catch {
       this.setState({ error: 'Sign up failed. Please try again.' });

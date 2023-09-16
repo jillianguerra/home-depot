@@ -12,6 +12,12 @@ export async function signUp(userData) {
   return getUser();
 }
 
+export async function signUp2(userData) {
+  const token = await usersAPI.signUp2(userData);
+  localStorage.setItem('token', token);
+  return getUser();
+}
+
 export async function login(credentials) {
   const token = await usersAPI.login(credentials);
   localStorage.setItem('token', token);
@@ -55,7 +61,7 @@ export async function updateUser(updatedUserData) {
 }
 
 export function logOut() {
-  localStorage.removeItem('token');
+  localStorage.clear();
 }
 
 export async function deleteUser() {

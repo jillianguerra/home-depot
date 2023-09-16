@@ -8,7 +8,7 @@
   ![Wireframe](https://github.com/JoeyZ56/home-depot/assets/127636815/0e979c22-aa03-4273-9dd3-8ec47330581f)
 
   ## ERD
-  ![Alt text](image.png)
+ ![Alt text](image-1.png)◊
 	
 
   ## Pitch Deck
